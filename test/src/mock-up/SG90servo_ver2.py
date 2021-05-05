@@ -22,6 +22,9 @@ class SG90servo():
         
         cycle = 7.25+4.75*deg/90.0
         self.servo.ChangeDutyCycle(cycle)
+        
+    def tracking(self, deg):
+        
 
     def stop(self):
         self.servo.start(0.0)
